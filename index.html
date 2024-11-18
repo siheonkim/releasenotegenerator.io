@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release note generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Release note generator</h1>
+        <div class="input-output-container">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="english">English:</label>
+                    <textarea id="english" placeholder="Enter English text"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="japanese">Japanese:</label>
+                    <textarea id="japanese" placeholder="Enter Japanese text"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="korean">Korean:</label>
+                    <textarea id="korean" placeholder="Enter Korean text"></textarea>
+                </div>
+            </div>
+            <div class="output-section">
+                <h2>Formatted Output</h2>
+                <textarea id="output" readonly></textarea>
+                <button onclick="copyToClipboard()">Copy to Clipboard</button>
+                <button onclick="saveToFile()">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
